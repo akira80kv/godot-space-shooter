@@ -1,6 +1,7 @@
 extends Area2D
 
 const Bullet = preload("res://Bullet.tscn")
+ 
 
 export(int) var SPEED = 100
 

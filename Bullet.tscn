@@ -6,6 +6,8 @@
 extents = Vector2( 4, 3 )
 
 [node name="Bullet" type="RigidBody2D"]
+gravity_scale = 0.0
+linear_velocity = Vector2( 200, 0 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

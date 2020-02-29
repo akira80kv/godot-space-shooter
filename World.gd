@@ -5,7 +5,7 @@ var score = 0 setget set_score
 onready var scoreLabel = $ScoreLabel
 
 func _on_Enemy_score_up():
-	score += 10
+	self.score += 10
 	
 
 func set_score(value):

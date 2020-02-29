@@ -12,3 +12,7 @@ func _on_Enemy_body_entered(body):
 	ARMOR -= 1
 	if ARMOR <= 0:
 		queue_free()
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()

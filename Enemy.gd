@@ -10,6 +10,7 @@ func _process(delta):
 
 
 func _on_Enemy_body_entered(body):
+	body.create_hit_effect()
 	body.queue_free()
 	ARMOR -= 1
 	if ARMOR <= 0:

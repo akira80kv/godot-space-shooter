@@ -38,6 +38,7 @@ process_material = SubResource( 1 )
 
 [node name="Ship" parent="." instance=ExtResource( 1 )]
 position = Vector2( 32, 90 )
+z_index = 1
 
 [node name="EnemySpawner" parent="." instance=ExtResource( 2 )]
 position = Vector2( 320, 0 )

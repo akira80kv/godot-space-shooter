@@ -48,4 +48,5 @@ __meta__ = {
 position = Vector2( 320, 90 )
 amount = 200
 lifetime = 7.0
+preprocess = 7.0
 process_material = SubResource( 1 )

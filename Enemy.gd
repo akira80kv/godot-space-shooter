@@ -14,16 +14,23 @@ func _on_Enemy_body_entered(body):
 	body.queue_free()
 	ARMOR -= 1
 	if ARMOR <= 0:
-		var main = get_tree().current_scene
-		if main.is_in_group("World"):
-			main.score += 10
-		queue_free()
+	add_to_score()
+	create_explotion()
+	queue_free()
+	
 
 
 func _on_VisibilityNotifier2D_screen_exited():
 	queue_free()
 	
-func _exit_tree():
+func add_to_score():
+	var main = get_tree().current_scene
+	if main.is_in_group("World"):
+		main.score += 10
+		
+		
+	
+func create_exposion():
 	var main = get_tree().current_scene
 	var explotionEffect = ExplotionEffect.instance()
 	main.add_child(explotionEffect)

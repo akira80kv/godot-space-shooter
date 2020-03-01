@@ -29,6 +29,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Particles2D" type="Particles2D" parent="."]
+position = Vector2( 320, 90 )
+amount = 200
+lifetime = 7.0
+preprocess = 7.0
+process_material = SubResource( 1 )
+
 [node name="Ship" parent="." instance=ExtResource( 1 )]
 position = Vector2( 32, 90 )
 
@@ -43,10 +50,3 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Particles2D" type="Particles2D" parent="."]
-position = Vector2( 320, 90 )
-amount = 200
-lifetime = 7.0
-preprocess = 7.0
-process_material = SubResource( 1 )

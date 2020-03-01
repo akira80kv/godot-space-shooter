@@ -3,6 +3,8 @@
 [ext_resource path="res://Hit.wav" type="AudioStream" id=1]
 
 [sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 1
+emission_sphere_radius = 2.0
 flag_disable_z = true
 spread = 180.0
 gravity = Vector3( 0, 0, 0 )
@@ -36,7 +38,7 @@ autoplay = true
 [node name="HitParticles" type="Particles2D" parent="."]
 emitting = false
 amount = 6
-lifetime = 0.25
+lifetime = 0.3
 one_shot = true
 explosiveness = 1.0
 process_material = SubResource( 1 )

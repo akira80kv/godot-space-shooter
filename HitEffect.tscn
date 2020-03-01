@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+
+[node name="HitEffect" type="Node2D"]
+
+[node name="HitSound" type="AudioStreamPlayer" parent="."]
+
+[node name="HitParticles" type="Particles2D" parent="."]
+position = Vector2( 128.161, 97.0458 )
+emitting = false
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource( 1 )

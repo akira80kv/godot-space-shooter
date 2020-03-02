@@ -1,5 +1,5 @@
 extends Area2D
-const ExplotionEffect = preload("res://ExplotionEffect.tscn")
+const ExplosionEffect = preload("res://ExplosionEffect.tscn")
 const Bullet = preload("res://Bullet.tscn")
  
 
@@ -21,9 +21,9 @@ func fire_bullet():
 
 func _exit_tree():
 	var main = get_tree().current_scene
-	var explotionEffect = ExplotionEffect.instance()
-	main.add_child(explotionEffect)
-	explotionEffect.global_position = global_position
+	var explosionEffect = ExplosionEffect.instance()
+	main.add_child(explosionEffect)
+	explosionEffect.global_position = global_position
 	
 
 

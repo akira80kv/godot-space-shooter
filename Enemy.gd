@@ -1,6 +1,6 @@
 extends Area2D
 
-const ExplotionEffect = preload("res://ExplotionEffect.tscn")
+const ExplosionEffect = preload("res://ExplosionEffect.tscn")
 
 export(int) var SPEED = 20
 export(int) var ARMOR = 3
@@ -14,9 +14,9 @@ func _on_Enemy_body_entered(body):
 	body.queue_free()
 	ARMOR -= 1
 	if ARMOR <= 0:
-	add_to_score()
-	create_explotion()
-	queue_free()
+		add_to_score()
+		create_explosion()
+		queue_free()
 	
 
 
@@ -30,11 +30,11 @@ func add_to_score():
 		
 		
 	
-func create_exposion():
+func create_explosion():
 	var main = get_tree().current_scene
-	var explotionEffect = ExplotionEffect.instance()
-	main.add_child(explotionEffect)
-	explotionEffect.global_position = global_position
+	var explosionEffect = ExplosionEffect.instance()
+	main.add_child(explosionEffect)
+	explosionEffect.global_position = global_position
 	
 	
 	

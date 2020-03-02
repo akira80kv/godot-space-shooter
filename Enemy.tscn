@@ -5,8 +5,6 @@
 
 [node name="Enemy" type="Area2D"]
 script = ExtResource( 2 )
-SPEED = null
-ARMOR = null
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

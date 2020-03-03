@@ -13,3 +13,8 @@ func set_score(value):
 #	if Input.is_action_just_pressed("ui_cancel"):
 #		get_tree().change_scene("res://PauseMenu.tscn")
 
+
+
+func _on_Ship_player_death():
+	yield(get_tree().create_timer(1), "timeout")
+	get_tree().change_scene("res://GameOverScreen.tscn")
